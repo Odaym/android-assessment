@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Spotify App</string>
+    <string name="com_spotify_sdk_redirect_scheme">ticketswap-spotify</string>
+    <string name="com_spotify_sdk_redirect_host">ticketswap-spotify</string>
+
+    <string name="login">Login with Spotify</string>
+    <string name="search">Search</string>
+    <string name="artist">Artist</string>
+    <string name="search_artists">Search for artists</string>
+    <string name="empty_search_results_hint">Search for artists on Spotify</string>
+    <string name="no_search_results_hint">No results were found</string>
+    <string name="go_to_artist_page">Go to Artist Page</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="oops">Oops!</string>
+    <string name="offline_error">You seem to be offline</string>
+    <string name="spotify_login_failed">Spotify login failed! Make sure you are connected.</string>
+    <string name="spotify_auth_failed">Failed to get Spotify auth token, please check your API keys.</string>
+    <string name="spotify_search_failed">Could not complete search, make you are connected.</string>
+
+</resources>

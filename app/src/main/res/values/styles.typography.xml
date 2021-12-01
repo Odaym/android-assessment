@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TLarge" parent="TextAppearance.AppCompat.Medium">
+        <item name="fontFamily">@font/tt_commons_regular</item>
+        <item name="android:textSize">@dimen/font_size_1</item>
+    </style>
+
+    <style name="TMedium" parent="TextAppearance.AppCompat.Medium">
+        <item name="fontFamily">@font/tt_commons_regular</item>
+        <item name="android:textSize">@dimen/font_size_2</item>
+    </style>
+
+    <style name="TSmall" parent="TextAppearance.AppCompat.Medium">
+        <item name="fontFamily">@font/tt_commons_regular</item>
+        <item name="android:textSize">@dimen/font_size_3</item>
+    </style>
+
+    <style name="TLarge.Bold">
+        <item name="fontFamily">@font/tt_commons_demibold</item>
+    </style>
+
+    <style name="TMedium.Bold">
+        <item name="fontFamily">@font/tt_commons_demibold</item>
+    </style>
+
+    <style name="TSmall.Bold">
+        <item name="fontFamily">@font/tt_commons_demibold</item>
+    </style>
+</resources>

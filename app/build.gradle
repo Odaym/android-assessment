@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlinx-serialization'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.saltserv.assessment"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // Test
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "org.mockito:mockito-core:3.8.0"
+    testImplementation "com.nhaarman:mockito-kotlin:1.5.0"
+    testImplementation "org.assertj:assertj-core:3.15.0"
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+    androidTestImplementation "androidx.test:core:1.4.0"
+    androidTestImplementation "com.android.support.test:runner:1.0.2"
+
+    implementation "com.google.android.material:material:1.4.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.1"
+
+    // Square
+    implementation "com.squareup.picasso:picasso:2.71828"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+    // RxJava
+    implementation "io.reactivex.rxjava2:rxjava:2.2.19"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+
+    // Timber
+    implementation "com.jakewharton.timber:timber:5.0.1"
+
+    // Koin
+    implementation "io.insert-koin:koin-android:3.1.2"
+
+    // Serialization
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2"
+
+    // Spotify
+    implementation "com.spotify.android:auth:1.1.0"
+}
